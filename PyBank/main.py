@@ -88,3 +88,6 @@ with open (budget_data_csv) as csvfile:
     #Print greatest decrease in profits
     print(f"Greatest Decrease in Profits:{greatest_decrease[0]} ${greatest_decrease[1]}")
 
+#Open analysis txt file
+#with open(budget_data_analysis, "w") as txtfile:
+ #   txtfile.write(f"Financial Analysis\n------------------------------\nTotal Months:{total_months}\nTotal :${net_total}\nAverage Change :${net_change_average}\nGreatest Increase in Profits:{greatest_increase[0]} ${greatest_increase[1]}\nGreatest Decrease in Profits:{greatest_decrease[0]} ${greatest_decrease[1]}")
