@@ -27,5 +27,50 @@ with open (election_data_csv) as csvfile:
         else: 
             tally_dict[row[2]] = 1
 
-print(tally_dict)
-        
+#Find the total nuber of votes cast
+#initialize count to 0
+total_votes = 0
+#add tally for each candidate in dictionary to total votes tally
+for candidate in tally_dict:
+    total_votes += tally_dict[candidate]
+
+#define function for finding percentages of votes
+def vote_percentage(candidate):
+    percentage = (tally_dict[candidate]/total_votes)*100
+    return round(percentage, 3)
+
+#define function for printing values
+def printing_values(candidate):
+    print(f"{candidate}: {vote_percentage(candidate)}% ({tally_dict[candidate]})")
+
+#define function for writing the values into the txt file
+
+
+#print election results header
+print("Election Results\n------------------------")
+
+#print total votes
+print(f"Total Votes: {total_votes}\n------------------------")
+
+#print all candidates with votes, their tallies, and percentages
+for candidate in tally_dict:
+    
+    printing_values(candidate)
+
+#print dash delineater
+print("------------------------")
+
+#calculate and print winner
+#initialize winner_count to 0
+winner_count = 0
+for candidate in tally_dict:
+    if tally_dict[candidate] > winner_count:
+        winner_count = tally_dict[candidate]
+        winner = candidate
+    
+
+#print winner name
+print(f"Winner: {winner}")
+
+#print dash delineater
+print("------------------------")
