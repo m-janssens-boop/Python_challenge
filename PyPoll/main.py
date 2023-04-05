@@ -44,7 +44,9 @@ def printing_values(candidate):
     print(f"{candidate}: {vote_percentage(candidate)}% ({tally_dict[candidate]})")
 
 #define function for writing the values into the txt file
-
+def write_txt(candidate):
+    with open(election_data_analysis, "a") as txtfile:
+        txtfile.write(f"{candidate}: {vote_percentage(candidate)}% ({tally_dict[candidate]})\n")
 
 #print election results header
 print("Election Results\n------------------------")
@@ -74,3 +76,18 @@ print(f"Winner: {winner}")
 
 #print dash delineater
 print("------------------------")
+
+#write analysis to txtfile
+with open(election_data_analysis, "w") as txtfile:
+    l1 = "Election Results\n"
+    l2 = "------------------------\n"
+    l3 = f"Total Votes: {total_votes}\n"
+    l4 = "------------------------\n"
+    txtfile.writelines([l1, l2, l3, l4])
+
+#writing function for candidate 'for loop'
+for candidate in tally_dict:
+    write_txt(candidate)
+
+with open(election_data_analysis, "a") as txtfile:
+    txtfile.write(f"------------------------\nWinner: {winner}\n------------------------")
