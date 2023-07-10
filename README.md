@@ -1,6 +1,31 @@
 # Python_challenge
-Description: There are two separate projects contained in this repository, PyBank and PyPoll. 
 
-PyBank: this script sorts through the CSV file of budget data located in the 'Resources' folder of the PyBank folder. It then compiles the data that it has cleaned (max, min, overall totals, etc) and prints it into both the terminal window and a separate txt file that is generated in the 'analysis' folder of PyBank. See comments in script for the details of how this is accomplished.
+PyBank
+----------
 
-PyPoll: this script sorts through the CSV file of voting data located in the 'Resources' folder of the PyPoll folder. It then compiles the data that it has cleaned (candidate names, total votes, percentages, and winner) and prints it into both the terminal window and a separate txt file that is generated in the 'analysis' folder of PyPoll. See comments in script for the details of how this is accomplished.
+## Background ##
+A company needs to analyze its financial records.  
+
+### Objective ##
+The data is given in a csv file containing "Date" and "Profit/Losses".
+Create a Python script that analyzes the records to calculate each of the following values:
+* The total number of months included in the dataset
+* The net total amount of "Profit/Losses" over the entire period
+* The changes in "Profit/Losses" over the entire period, and then the average of those changes
+* The greatest increase in profits (date and amount) over the entire period
+* The greatest decrease in profits (date and amount) over the entire period
+
+PyPoll
+----------
+
+## Background ##
+A small, rural town wants to modernize its voting process.
+
+### Objective ##
+The dataset is composed of three columns: "Voter ID", "County", and "Candidate". Create a Python script that analyzes the votes and calculates each of the following values:
+* The total number of votes cast
+* A complete list of candidates who received votes
+* The percentage of votes each candidate won
+* The total number of votes each candidate won
+* The winner of the election based on popular vote
+
