@@ -3,7 +3,7 @@
 PyBank
 ----------
 
-## Background ##
+### Background ###
 A company needs to analyze its financial records.  
 
 ### Objective ##
@@ -14,11 +14,13 @@ Create a Python script that analyzes the records to calculate each of the follow
 * The changes in "Profit/Losses" over the entire period, and then the average of those changes
 * The greatest increase in profits (date and amount) over the entire period
 * The greatest decrease in profits (date and amount) over the entire period
+<img width="398" alt="Screenshot 2023-07-09 at 5 42 34 PM" src="https://github.com/m-janssens-boop/Python_challenge/assets/127706155/5a5fd250-740a-46fc-a8ae-e07eead1bc7c">
+
 
 PyPoll
 ----------
 
-## Background ##
+### Background ###
 A small, rural town wants to modernize its voting process.
 
 ### Objective ##
@@ -29,3 +31,4 @@ The dataset is composed of three columns: "Voter ID", "County", and "Candidate".
 * The total number of votes each candidate won
 * The winner of the election based on popular vote
 
+<img width="392" alt="Screenshot 2023-07-09 at 5 42 47 PM" src="https://github.com/m-janssens-boop/Python_challenge/assets/127706155/9df2fb69-52d2-4576-9406-962e0a585a28">
